@@ -40,6 +40,10 @@ describe 'deluxe' do
   it 'returns deluxe if a number is greater than 10 and contains all the same digets' do
     expect(@fizzBuzz.fizz_buzz(2222)).to eq 'deluxe'
   end
+
+  it 'returns fake deluxe if a number is deluxe and odd' do
+    expect(@fizzBuzz.fizz_buzz(11)).to eq 'fake deluxe'
+  end
 end
 
 describe 'fizz buzz deluxe' do
